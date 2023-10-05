@@ -5,7 +5,8 @@ public class Problem1 {
         return switch (word) {
             case "hello" -> "word";
             case "ping" -> "pong";
-            default -> throw new IllegalStateException("Unexpected value: " + word);
+            case "bye" -> "bye";
+            default -> throw new IllegalArgumentException("Unexpected value: " + word);
         };
     }
 }
